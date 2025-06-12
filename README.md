@@ -8,7 +8,7 @@ A simple and responsive web application that allows users to get **real-time wea
 
 - 🔍 Search weather by **city name**
 - 📍 Get weather using **current location** (requires browser permission)
-- 📊 Displays:
+-  Displays:
   - **Temperature** (°C)
   - **Weather condition** with icon
   - **Humidity** (%)
@@ -21,7 +21,7 @@ A simple and responsive web application that allows users to get **real-time wea
 ---
 
 
-## 🚀 Usage
+##  Usage
 
 - **Search by City:**  
   Enter a city name and click the search button.
