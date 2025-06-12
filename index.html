@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form>
+            <input type="text" id="city-input" autocomplete="off" placeholder="Enter city name">
+            <button type="button" id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button type="button" id="location-btn">
+                <i class="fa-solid fa-location-crosshairs"></i>
+            </button>
+        </form>
+
+        <section class="result weather-card hidden">
+            <figure class="name">
+                <figcaption id="location-name">--</figcaption> 
+                <img id="country-flag" src="">
+            </figure>
+
+            <figure class="temperature">
+                <img id="weather-icon" src="" alt="Weather icon">
+                <figcaption>
+                    <span id="temperature">--</span>
+                    
+                </figcaption> 
+            </figure>
+            <p class="description" id="condition">--</p>
+            <ul>
+                <li>
+                    <span>clouds</span>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span id="clouds">--</span>%
+                </li>
+                <li>
+                    <span>humidity</span>
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="humidity">--</span>%
+                </li>
+                <li>
+                    <span>pressure</span>
+                    <i class="fa-solid fa-gauge"></i>
+                    <span id="pressure">--</span> hPa
+                </li>
+                <li>
+                    <span>wind</span>
+                    <i class="fa-solid fa-wind"></i>
+                    <span id="wind">--</span> m/s
+                </li>
+            </ul>
+        </section>
+
+        <p id="error-message" class="hidden" style="color:red; text-align:center; margin-top:10px;"></p>
+    </main>
+
+    <script src="scrit.js"></script>
+</body>
+</html>
+
